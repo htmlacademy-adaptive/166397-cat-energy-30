@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
@@ -35,11 +39,15 @@
     </header>
     <main class="main-container">
       <section class="hero">
-      <h1 class="visualy-hidden">Cat Energy</h1>
+      <h1 class="visually-hidden">Cat Energy</h1>
         <div class="hero__wrapper">
           <h2 class="hero__title title-huge">Функциональное питание для котов</h2>
           <p class="hero__description">Занялся собой? Займись котом!</p>
-          <img class="hero__image" src="#" width="280" height="270" alt="Товар Cat Energy PRO 500 г, курица">
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-product-desktop@1x.png 1x, images/index-product-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-product-tablet@1x.jpg 1x, images/index-product-tablet@2x.jpg 2x">
+            <img class="hero__image" src="images/index-product-mobile@1x.png" srcset="images/index-product-mobile@2x.png 2x" width="280" height="270" alt="Товар Cat Energy PRO 500 г, курица">
+          </picture>
           <a class="hero__button button-primary" href="#">Подобрать программу</a>
         </div>
       </section>
@@ -104,7 +112,10 @@
             </div>
           </dl>
           <div class="example__slider slider">
-            <img class="slider__image" src="#" width="280" height="256" alt="Слайдер с котом.">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slides-tablet@1x.png 1x, images/slides-tablet@2x.png 2x">
+              <img class="slider__image" src="images/slides@1x.png" srcset="images/slides@2x.png 2x" width="280" height="256" alt="Слайдер с котом.">
+            </picture>
             <button class="slider__control" type="button">
               <span class="visually-hidden">Двигать стрелочки</span>
             </button>
@@ -116,7 +127,11 @@
           <h2 class="contacts__title title-tiny">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <img class="contacts__map" src="#" width="320" height="362" alt="Карта.">
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта.">
+        </picture>
       </section>
     </main>
     <footer class="main-footer">
