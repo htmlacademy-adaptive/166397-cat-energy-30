@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(180deg, rgba($primary-bg-color, 0.85), rgba($primary-bg-color, 0.85) 67%, transparent 33%, transparent);
+  background: linear-gradient(180deg, $primary-bg-color--opacity, $primary-bg-color--opacity 67%, transparent 33%, transparent);
 }
 
 .hero__description {

@@ -7,4 +7,9 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $primary-bg-color;
+
+  &--dark {
+    color: $base-color-text;
+    background-color: $secondary-bg-color;
+  }
 }

@@ -1,0 +1,19 @@
+.product-card {
+  &--additional {
+    .product-card__title {
+      @include upper-text;
+      color: $fifth-color-text;
+    }
+
+    .product-card__text {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+.product-card__text {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}

@@ -4,4 +4,8 @@
   line-height: 20px;
   color: $fourth-color-text;
   text-transform: uppercase;
+
+  &--special {
+    color: $fifth-color-text;
+  }
 }
