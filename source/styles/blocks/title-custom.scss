@@ -4,4 +4,9 @@
   line-height: 24px;
   color: $second-color-text;
   text-align: center;
+
+  &--form {
+    line-height: 26px;
+    text-align: left;
+  }
 }

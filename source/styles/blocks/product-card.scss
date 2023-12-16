@@ -1,8 +1,8 @@
 .product-card {
   &--additional {
     .product-card__title {
-      @include upper-text;
-      color: $fifth-color-text;
+      line-height: 16px;
+      text-align: center;
     }
 
     .product-card__text {

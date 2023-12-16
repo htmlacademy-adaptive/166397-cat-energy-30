@@ -1,3 +1,11 @@
+@mixin stats-item-price {
+  color: $second-color-text;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 .stats__item {
   text-align: center;
 }
@@ -13,14 +21,6 @@
 .stats__definition {
   font-size: 12px;
   line-height: 12px;
-}
-
-@mixin stats-item-price {
-  color: $second-color-text;
-  font-family: $secondary-font;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .stats__item--price {
