@@ -24,11 +24,11 @@
 }
 
 .stats__item--price {
-    .stats__value {
-      @include stats-item-price;
-    }
-
-    .stats__definition {
-      @include stats-item-price;
-    }
+  .stats__value {
+    @include stats-item-price;
   }
+
+  .stats__definition {
+    @include stats-item-price;
+  }
+}
