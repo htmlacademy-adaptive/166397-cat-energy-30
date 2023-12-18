@@ -1,0 +1,11 @@
+.hero {
+  background: linear-gradient(180deg, $primary-bg-color--opacity, $primary-bg-color--opacity 67%, transparent 33%, transparent);
+}
+
+.hero__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $third-color-text;
+  text-transform: uppercase;
+}
