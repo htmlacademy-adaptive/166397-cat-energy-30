@@ -1,7 +1,21 @@
 .banner {
+  position: relative;
   font-size: 16px;
   line-height: 20px;
   color: $third-color-text;
   text-align: center;
   background-color: $primary-bg-color--opacity;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../images/icons/stack.svg#icon-gift");
+    background-color: $primary-bg-color; //убрать
+    transform: translateX(-50%);
+  }
 }

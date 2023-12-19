@@ -16,7 +16,11 @@
         <nav class="main-nav">
           <div class="main-nav__container">
             <a class="main-nav__logo" href="index.html">
-              <img class="main-nav__logo-image" src="#" width="33" height="38" alt="Логотип.">
+              <picture>
+                <source width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
+                <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
+                <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+              </picture>
             </a>
             <img class="main-nav__logo-text logo-text" src="#" width="101" height="18" alt="Cat Energy.">
             <a class="main-nav__burger" href="#">
