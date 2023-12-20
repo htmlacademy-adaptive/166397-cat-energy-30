@@ -3,3 +3,34 @@
   font-size: 16px;
   text-transform: uppercase;
 }
+
+.field-group__item {
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 50%;
+    mask-repeat: no-repeat;
+    mask-size: 20px 20px;
+    background-color: $fifth-color-text;
+  }
+
+  &--email {
+    position: relative;
+
+    &::before {
+      mask-image: url("../../images/icons/stack.svg#email-stroke");
+    }
+  }
+
+  &--phone {
+    position: relative;
+
+    &::before {
+      mask-image: url("../../images/icons/stack.svg#phone-stroke");
+    }
+  }
+}

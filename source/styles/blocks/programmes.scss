@@ -2,38 +2,38 @@
   background-color: $secondary-bg-color;
 }
 
-.programmes__title {
-  position: relative;
+// .programmes__title {
+//   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-color: $primary-bg-color;
-    border-radius: 50%;
-  }
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     display: block;
+//     width: 50px;
+//     height: 50px;
+//     background-color: $primary-bg-color;
+//     border-radius: 50%;
+//   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-  }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 50%;
+//     left: 0;
+//     display: block;
+//   }
 
-  &--slim::after {
-    width: 36px;
-    height: 50px;
-    background-image: url("../../images/icons/stack.svg#cat-slim");
-  }
+//   &--slim::after {
+//     width: 36px;
+//     height: 50px;
+//     background-image: url("../../images/icons/stack.svg#cat-slim");
+//   }
 
-  &--pro::after {
-    width: 67px;
-    height: 28px;
-    background-image: url("../../images/icons/stack.svg#cat-pro");
-  }
-}
+//   &--pro::after {
+//     width: 67px;
+//     height: 28px;
+//     background-image: url("../../images/icons/stack.svg#cat-pro");
+//   }
+// }

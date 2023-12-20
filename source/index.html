@@ -22,7 +22,11 @@
                 <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
               </picture>
             </span>
-            <img class="main-nav__logo-text logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+            <span class="main-nav__logo-text logo-text" href="#">
+              <svg class="logo-text__image" width="101" height="18" viewBox="0 0 101 18">
+                <use href="images/icons/stack.svg#logo-text"></use>
+              </svg>
+            </span>
             <a class="main-nav__burger" href="#">
               <span class="visually-hidden">Открыть меню</span>
             </a>
@@ -60,11 +64,25 @@
           <h2 class="visually-hidden">Программы питания</h2>
           <ul class="programmes__list">
             <li class="programmes__item">
-              <h3 class="programmes__title programmes__title--slim title-small">Похудение</h3>
+              <div class="programmes__container">
+                <div class="programmes__picture">
+                  <svg width="36" height="50" viewBox="0 0 36 50">
+                    <use href="images/icons/stack.svg#cat-slim"></use>
+                  </svg>
+                </div>
+                <h3 class="programmes__title programmes__title--slim title-small">Похудение</h3>
+              </div>
               <p class="programmes__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="programmes__link link-decoration" href="#">Каталог slim</a>
             </li>
             <li class="programmes__item">
+              <div class="programmes__container">
+                <div class="programmes__picture">
+                  <svg width="67" height="28" viewBox="0 0 67 28">
+                    <use href="images/icons/stack.svg#cat-pro"></use>
+                  </svg>
+                </div>
+              </div>
               <h3 class="programmes__title programmes__title--pro title-small">Набор массы</h3>
               <p class="programmes__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="programmes__link link-decoration" href="#">Каталог pro</a>
@@ -115,7 +133,9 @@
               <img class="slider__image" src="images/slides@1x.png" srcset="images/slides@2x.png 2x" width="280" height="256" alt="Слайдер с котом.">
             </picture>
             <button class="slider__control" type="button">
-              <img src="images/thumb.svg" width="24" height="18" alt="">
+              <svg class="social__icon" width="24" height="18" viewBox="0 0 24 18">
+                <use href="images/icons/stack.svg#thumb"></use>
+              </svg>
               <span class="visually-hidden">Двигать стрелочки</span>
             </button>
           </div>
@@ -135,21 +155,31 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <img class="main-footer__logo-text logo-text" src="images/logo-text.svg" width="128" height="24" alt="Cat Energy.">
+        <span class="main-footer__logo-text logo-text" href="#">
+          <svg class="logo-text__image" width="128" height="24" viewBox="0 0 128 24">
+            <use href="images/icons/stack.svg#logo-text"></use>
+          </svg>
+        </span>
         <ul class="main-footer__social social">
           <li class="social__list">
             <a class="social__link" href="#">
-              <img class="social__icon" src="images/vkontakte.svg" width="28" height="22" alt="Vkontakte.">
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22">
+                <use href="images/icons/stack.svg#vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__list">
             <a class="social__link" href="#">
-              <img class="social__icon" src="images/youtube.svg" width="28" height="22" alt="YouTube.">
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22">
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="social__list">
             <a class="social__link" href="#">
-              <img class="social__icon" src="images/telegram.svg" width="28" height="22" alt="Telegram.">
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22">
+                <use href="images/icons/stack.svg#telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -157,9 +187,11 @@
           <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="main-footer__text">HTML Academy</p>
           </a>
-          <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="main-footer__image" src="images/logo-academy.svg" width="27" height="34" alt="Логотип.">
-          </a>
+          <div class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="social__icon" width="27" height="34" viewBox="0 0 27 34">
+              <use href="images/icons/stack.svg#logo-academy"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </footer>
