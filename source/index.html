@@ -23,7 +23,8 @@
               </picture>
             </span>
             <span class="main-nav__logo-text logo-text" href="#">
-              <svg class="logo-text__image" width="101" height="18" viewBox="0 0 101 18">
+              <span class="visually-hidden">Логотип Cat Energy</span>
+              <svg class="logo-text__image" width="101" height="18" viewBox="0 0 101 18" aria-hidden="true" focusable="false">
                 <use href="images/icons/stack.svg#logo-text"></use>
               </svg>
             </span>
@@ -125,7 +126,8 @@
             </li>
             <li class="functioning__item">
               <div class="functioning__picture">
-                <svg class="functioning__icon" width="25" height="28" viewBox="0 0 25 28">
+                <svg class="functioning__icon" width="25" height="28" viewBox="0 0 25 28" aria-labelledby="icon-clock-title">
+                  <title id="icon-clock-title">Часы</title>
                   <use href="images/icons/stack.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -158,7 +160,7 @@
               <img class="slider__image" src="images/slides@1x.png" srcset="images/slides@2x.png 2x" width="280" height="256" alt="Слайдер с котом.">
             </picture>
             <button class="slider__control" type="button">
-              <svg class="social__icon" width="24" height="18" viewBox="0 0 24 18">
+              <svg class="social__icon" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
                 <use href="images/icons/stack.svg#thumb"></use>
               </svg>
               <span class="visually-hidden">Двигать стрелочки</span>
@@ -180,29 +182,33 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <span class="main-footer__logo-text logo-text" href="#">
-          <svg class="logo-text__image" width="128" height="24" viewBox="0 0 128 24">
+        <span class="main-footer__logo-text logo-text">
+          <span class="visually-hidden">Логотип Cat Energy</span>
+          <svg class="logo-text__image" width="128" height="24" viewBox="0 0 128 24" aria-hidden="true" focusable="false">
             <use href="images/icons/stack.svg#logo-text"></use>
           </svg>
         </span>
         <ul class="main-footer__social social">
           <li class="social__list">
             <a class="social__link" href="#">
-              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" aria-hidden="true" focusable="false">
                 <use href="images/icons/stack.svg#vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__list">
             <a class="social__link" href="#">
-              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22">
+              <span class="visually-hidden">Ютуб</span>
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" aria-hidden="true" focusable="false">
                 <use href="images/icons/stack.svg#youtube"></use>
               </svg>
             </a>
           </li>
           <li class="social__list">
             <a class="social__link" href="#">
-              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22">
+              <span class="visually-hidden">Телеграм</span>
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" aria-hidden="true" focusable="false">
                 <use href="images/icons/stack.svg#telegram"></use>
               </svg>
             </a>
@@ -210,13 +216,15 @@
         </ul>
         <div class="main-footer__logo">
           <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Сайт</span>
             <p class="main-footer__text">HTML Academy</p>
           </a>
-          <div class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="social__icon" width="27" height="34" viewBox="0 0 27 34">
+          <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Сайт HTML Academy</span>
+            <svg class="social__icon" width="27" height="34" viewBox="0 0 27 34" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#logo-academy"></use>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </footer>

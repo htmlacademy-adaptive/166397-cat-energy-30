@@ -7,7 +7,6 @@
 .field-group__item {
   &::before {
     position: absolute;
-    content: "";
     display: block;
     width: 20px;
     height: 20px;
@@ -22,6 +21,7 @@
     position: relative;
 
     &::before {
+      content: "";
       mask-image: url("../../images/icons/stack.svg#email-stroke");
     }
   }
@@ -29,7 +29,26 @@
   &--phone {
     position: relative;
 
+    // .field-group__label {
+    //   position: relative;
+
+    //   &::before {
+    //     content: "";
+    //     mask-image: url("../../images/icons/stack.svg#email-stroke");
+    //     position: absolute;
+    //     display: block;
+    //     width: 20px;
+    //     height: 20px;
+    //     right: 0;
+    //     top: 50%;
+    //     mask-repeat: no-repeat;
+    //     mask-size: 20px 20px;
+    //     background-color: $fifth-color-text;
+    //   }
+    // }
+
     &::before {
+      content: "";
       mask-image: url("../../images/icons/stack.svg#phone-stroke");
     }
   }
