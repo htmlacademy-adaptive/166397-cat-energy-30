@@ -16,9 +16,18 @@
         <nav class="main-nav">
           <div class="main-nav__container">
             <a class="main-nav__logo" href="index.html">
-              <img class="main-nav__logo-image" src="#" width="33" height="38" alt="Логотип.">
+              <picture>
+                <source width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
+                <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
+                <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy. Перейти на главную страницу.">
+              </picture>
             </a>
-            <img class="main-nav__logo-text logo-text" src="#" width="101" height="18" alt="Cat Energy.">
+            <a class="main-nav__logo-text logo-text" href="index.html">
+              <span class="visually-hidden">Cat Energy. Перейти на главную страницу</span>
+              <svg class="logo-text__image" width="101" height="18" viewBox="0 0 101 18" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#logo-text"></use>
+              </svg>
+            </a>
             <a class="main-nav__burger" href="#">
               <span class="visually-hidden">Открыть меню</span>
             </a>
@@ -78,12 +87,14 @@
               <legend class="field-group__title title-custom title-custom--form">Контактные данные (владельца кота)</legend>
               <ul class="field-group__list">
                 <li class="field-group__item">
-                  <label class="field-group__label" for="email">E-mail:*</label>
-                  <input class=" field-group__field field field--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  <label class="field-group__label label-icon label-icon--email" for="email">E-mail:*
+                    <input class=" field-group__field field field--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                  </label>
                 </li>
                 <li class="field-group__item">
-                  <label class="field-group__label" for="phone">Телефон:*</label>
-                  <input class=" field-group__field field field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                  <label class="field-group__label label-icon label-icon--phone" for="phone">Телефон:*
+                    <input class=" field-group__field field field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -113,7 +124,7 @@
               </ul>
             </fieldset>
             <div class="program-form__container">
-              <button class="program-form__button button-primary" type="submit">Отправить заявку</button>
+              <button class="program-form__button button button--primary" type="submit">Отправить заявку</button>
               <p class="program-form__legend">
                 <small>* — Обязательные поля</small>
               </p>
@@ -135,30 +146,48 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <img class="main-footer__logo-text logo-text" src="#" width="128" height="24" alt="Cat Energy.">
+        <a class="main-footer__logo-text logo-text" href="index.html">
+          <span class="visually-hidden">Логотип Cat Energy</span>
+          <svg class="logo-text__image" width="128" height="24" viewBox="0 0 128 24" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#logo-text"></use>
+          </svg>
+        </a>
         <ul class="main-footer__social social">
           <li class="social__list">
             <a class="social__link" href="#">
-              <img class="social__icon" src="#" width="28" height="22" alt="Vkontakte.">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#vkontakte"></use>
+              </svg>
             </a>
           </li>
           <li class="social__list">
             <a class="social__link" href="#">
-              <img class="social__icon" src="#" width="28" height="22" alt="YouTube.">
+              <span class="visually-hidden">Ютуб</span>
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="social__list">
             <a class="social__link" href="#">
-              <img class="social__icon" src="#" width="28" height="22" alt="Telegram.">
+              <span class="visually-hidden">Телеграм</span>
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <div class="main-footer__logo">
           <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Сайт</span>
             <p class="main-footer__text">HTML Academy</p>
           </a>
           <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="main-footer__image" src="#" width="27" height="34" alt="Логотип.">
+            <span class="visually-hidden">Сайт HTML Academy</span>
+            <svg class="main-footer__academy-logo" width="27" height="34" viewBox="0 0 27 34" aria-hidden="true" focusable="false">
+              <use href="images/icons/stack.svg#logo-academy"></use>
+            </svg>
           </a>
         </div>
       </div>
