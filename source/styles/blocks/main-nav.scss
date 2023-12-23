@@ -1,3 +1,18 @@
 .main-nav {
-  // .main-nav
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-nav__logo {
+  width: 174px;
+}
+
+.main-nav__burger {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

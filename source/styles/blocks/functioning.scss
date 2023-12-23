@@ -1,5 +1,40 @@
+.functioning {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.functioning__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .functioning__item {
   position: relative;
+
+  // @media (min-width: $tablet-width) {
+  //   max-width: 354px;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   max-width: 250px;
+  // }
 }
 
 .functioning__picture {
@@ -10,34 +45,3 @@
   height: 60px;
   background-color: $primary-bg-color;
 }
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     width: 60px;
-//     height: 60px;
-//     background-color: $primary-bg-color;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//   }
-
-//   &--leaf::before {
-//     background-image: url("../../images/icons/stack.svg#icon-leaf");
-//     background-size: 25px 28px;
-//   }
-
-//   &--cook::before {
-//     background-image: url("../../images/icons/stack.svg#icon-cook");
-//     background-size: 27px 29px;
-//   }
-
-//   &--eat::before {
-//     background-image: url("../../images/icons/stack.svg#icon-eat");
-//     background-size: 25px 30px;
-//   }
-
-//   &--clock::before {
-//     background-image: url("../../images/icons/stack.svg#icon-clock");
-//     background-size: 27px 31px;
-//   }

@@ -12,23 +12,24 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="main-header__wrapper container">
         <nav class="main-nav">
           <div class="main-nav__container">
             <span class="main-nav__logo">
               <picture>
-                <source width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
+                <source width="202" height="59" media="(min-width: 1300px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
                 <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
                 <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
               </picture>
             </span>
-            <span class="main-nav__logo-text logo-text">
+            <span class="main-nav__logo-text logo-text logo-text--header">
               <span class="visually-hidden">Логотип Cat Energy</span>
               <svg class="logo-text__image" width="101" height="18" viewBox="0 0 101 18" aria-hidden="true" focusable="false">
                 <use href="images/icons/stack.svg#logo-text"></use>
               </svg>
             </span>
             <a class="main-nav__burger" href="#">
+              меню
               <span class="visually-hidden">Открыть меню</span>
             </a>
           </div>
@@ -49,11 +50,11 @@
     <main class="main-container">
       <section class="hero">
       <h1 class="visually-hidden">Cat Energy</h1>
-        <div class="hero__wrapper">
+        <div class="hero__wrapper container">
           <h2 class="hero__title title-huge title-huge--mobile">Функциональное питание для котов</h2>
           <p class="hero__description">Занялся собой? Займись котом!</p>
           <picture>
-            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-product-desktop@1x.png 1x, images/index-product-desktop@2x.png 2x">
+            <source width="552" height="499" type="image/png" media="(min-width: 1300px)" srcset="images/index-product-desktop@1x.png 1x, images/index-product-desktop@2x.png 2x">
             <source width="709" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/index-product-tablet@1x.jpg 1x, images/index-product-tablet@2x.jpg 2x">
             <img class="hero__image" src="images/index-product-mobile@1x.png" srcset="images/index-product-mobile@2x.png 2x" width="280" height="270" alt="Товар Cat Energy PRO 500 г, курица">
           </picture>
@@ -61,7 +62,7 @@
         </div>
       </section>
       <section class="programmes">
-        <div class="programmes__wrapper">
+        <div class="programmes__wrapper container">
           <h2 class="visually-hidden">Программы питания</h2>
           <ul class="programmes__list">
             <li class="programmes__item">
@@ -94,7 +95,7 @@
         </div>
       </section>
       <section class="functioning">
-        <div class="functioning__wrapper">
+        <div class="functioning__wrapper container">
           <h2 class="functioning__title title-huge title-huge--high">Как это работает</h2>
           <ul class="functioning__list">
             <li class="functioning__item">
@@ -137,23 +138,25 @@
         </div>
       </section>
       <section class="example">
-        <div class="example__wrapper">
-          <h2 class="example__title title-huge title-huge--high">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="example__stats stats">
-            <div class="stats__item">
-              <dt class="stats__value">5 кг</dt>
-              <dd class="stats__definition">снижение веса</dd>
-            </div>
-            <div class="stats__item">
-              <dt class="stats__value">60 дней</dt>
-              <dd class="stats__definition">затрачено времени</dd>
-            </div>
-            <div class="stats__item stats__item--price">
-              <dt class="stats__value">15 000 руб.</dt>
-              <dd class="stats__definition">затраты на питание</dd>
-            </div>
-          </dl>
+        <div class="example__wrapper container">
+          <div class="example__info">
+            <h2 class="example__title title-huge title-huge--high">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__stats stats">
+              <div class="stats__item">
+                <dt class="stats__value">5 кг</dt>
+                <dd class="stats__definition">снижение веса</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__value">60 дней</dt>
+                <dd class="stats__definition">затрачено времени</dd>
+              </div>
+              <div class="stats__item stats__item--price">
+                <dt class="stats__value">15 000 руб.</dt>
+                <dd class="stats__definition">затраты на питание</dd>
+              </div>
+            </dl>
+          </div>
           <div class="example__slider slider">
             <picture>
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slides-tablet@1x.png 1x, images/slides-tablet@2x.png 2x">
@@ -169,19 +172,19 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper container">
           <h2 class="contacts__title title-tiny">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <picture>
+            <source width="1300" height="400" type="image/jpeg" media="(min-width: 1300px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта.">
+          </picture>
         </div>
-        <picture>
-          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-          <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта.">
-        </picture>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper container">
         <span class="main-footer__logo-text logo-text">
           <span class="visually-hidden">Логотип Cat Energy</span>
           <svg class="logo-text__image" width="128" height="24" viewBox="0 0 128 24" aria-hidden="true" focusable="false">

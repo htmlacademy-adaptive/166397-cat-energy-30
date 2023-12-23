@@ -1,3 +1,11 @@
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .main-footer__link {
   font-size: 16px;
   line-height: 20px;
