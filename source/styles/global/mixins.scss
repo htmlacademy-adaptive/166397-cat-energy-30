@@ -7,3 +7,8 @@
     font-display: swap;
   }
 }
+
+@mixin grid ($columns: 2) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+}
