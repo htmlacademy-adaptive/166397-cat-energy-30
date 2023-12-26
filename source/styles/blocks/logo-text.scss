@@ -1,3 +1,7 @@
 .logo-text {
-  // здесь будет код
+  &--header {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }

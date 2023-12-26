@@ -1,3 +1,9 @@
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    @include flex-sb;
+  }
+}
+
 .main-footer__link {
   font-size: 16px;
   line-height: 20px;

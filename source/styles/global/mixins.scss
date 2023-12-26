@@ -7,3 +7,14 @@
     font-display: swap;
   }
 }
+
+@mixin grid ($columns: 2) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin flex-sb {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

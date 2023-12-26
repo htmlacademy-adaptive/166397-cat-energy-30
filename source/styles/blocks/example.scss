@@ -1,3 +1,13 @@
-.example {
-  // здесь будет код
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    // display: flex;
+    // justify-content: space-between;
+    @include flex-sb;
+  }
+}
+
+.example__info {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
