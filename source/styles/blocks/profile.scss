@@ -1,6 +1,21 @@
-.profile__columns {
-  // @media (min-width: $tablet-width) {
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-  // }
+.profile {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.profile__field-group {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }

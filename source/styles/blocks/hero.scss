@@ -1,60 +1,117 @@
 .hero {
-  margin-bottom: 20px;
-  // background: linear-gradient(180deg, $primary-bg-color--opacity, $primary-bg-color--opacity 67%, transparent 33%, transparent);
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    // background-image: linear-gradient(-90deg, $primary-bg-color--opacity, $primary-bg-color--opacity 50%, $base-color 50%, $base-color);
   }
 }
 
 .hero__wrapper {
+  position: relative;
+  padding-top: 27px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    @include grid (3);
-    grid-template-rows: repeat(3, auto);
+    // display: grid;
+    // grid-template-columns: 447px 160px 1fr;
+    // grid-template-rows: min-content 1fr;
+    padding-top: 29px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
   }
 }
 
 .hero__text {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 50px;
+    padding: 65px 90px 0;
+  }
+
   @media (min-width: $desktop-width) {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
     z-index: 1;
+    max-width: 610px;
+    padding: 81px 10px 0 80px;
+    // grid-row-start: 1;
+    // grid-row-end: 2;
+    // grid-column-start: 1;
+    // grid-column-end: 3;
+    // justify-self: end;
   }
 }
 
 .hero__description {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   color: $third-color-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $second-color-text;
+  }
 }
 
 .hero__picture {
-  @media (min-width: $desktop-width) {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
+  height: 270px;
+  margin-bottom: 3px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     order: 3;
+    height: 609px;
+    margin-top: -83px;
+    margin-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 29px;
+    right: 331px;
+    // grid-column-start: 2;
+    // grid-column-end: 4;
+    // grid-row-start: 1;
+    // grid-row-end: 3;
+    // justify-self: start;
+    height: 499px;
+    margin-top: 0;
   }
 }
 
 .hero__button {
-  align-self: start;
-  justify-self: start;
+  // align-self: start;
+  // justify-self: start;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    order: 2;
+    min-width: 244px;
+    width: 32%;
+    margin-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 224px;
+    margin-left: 80px;
+  }
 }

@@ -1,14 +1,25 @@
 .title-huge {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: $second-color-text;
 
-  &--mobile {
-    color: $third-color-text;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  &--index {
+    @media (max-width: $mobile-width-only) {
+      color: $third-color-text;
+    }
   }
 
   &--high {
-    line-height: 40px;
+    @media (max-width: $mobile-width-only) {
+      line-height: 40px;
+    }
   }
 }

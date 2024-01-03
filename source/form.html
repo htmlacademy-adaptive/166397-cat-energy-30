@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="page__main-header main-header">
       <div class="main-header__wrapper container">
         <nav class="main-nav">
           <div class="main-nav__container">
@@ -28,9 +28,10 @@
                 <use href="images/icons/stack.svg#logo-text"></use>
               </svg>
             </a>
-            <a class="main-nav__burger" href="#">
-              <span class="visually-hidden">Открыть меню</span>
-            </a>
+            <button class="main-nav__burger main-nav__burger--active">
+              <span class="visually-hidden">Меню</span>
+              <span class="main-nav__burger-icon"></span>
+            </button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -46,15 +47,15 @@
         </nav>
       </div>
     </header>
-    <main class="main-container">
-      <section class="program-form">
+    <main class="page__main-container main-container">
+      <section class="main-container__program-form program-form">
         <div class="program-form__wrapper container">
           <h1 class="program-form__title title-huge">Подбор программы</h1>
           <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="program-form__profile profile" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="profile__field-group field-group field-group--details">
               <legend class="visually-hidden">Данные кота</legend>
-              <ul class="field-group__list">
+              <ul class="field-group__list field-group__list--data">
                 <li class="field-group__item">
                   <label class="field-group__label" for="name">Имя:*</label>
                   <input class=" field-group__field field" type="text" id="name" name="name" placeholder="Барсик" required>
@@ -84,21 +85,23 @@
               </ul>
             </fieldset>
             <fieldset class="profile__field-group field-group">
-              <legend class="field-group__title title-custom title-custom--form">Контактные данные (владельца кота)</legend>
+              <legend class="field-group__title title-custom title-custom--form">Контактные данные <br>(владельца кота)</legend>
               <ul class="field-group__list field-group__list--contacts">
                 <li class="field-group__item">
                   <label class="field-group__label label-icon label-icon--email" for="email">E-mail:*
-                    <input class=" field-group__field field field--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    <input class="field-group__field field field--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    <span class="label-icon__icon"></span>
                   </label>
                 </li>
                 <li class="field-group__item">
                   <label class="field-group__label label-icon label-icon--phone" for="phone">Телефон:*
-                    <input class=" field-group__field field field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                    <input class="field-group__field field field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                    <span class="label-icon__icon"></span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="profile__field-group field-group">
+            <fieldset class="profile__field-group field-group field-group--comment">
               <legend class="field-group__title title-custom title-custom--form">Комментарий</legend>
               <textarea class="field-group__field field field--textarea" name="about">Расскажите обо всех повадках кота</textarea>
             </fieldset>
@@ -132,19 +135,19 @@
           </form>
         </div>
       </section>
-      <section class="contacts">
+      <section class="main-container__contacts contacts contacts--dark">
         <div class="contacts__wrapper container">
-          <h2 class="contacts__title title-tiny">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <picture>
-            <source width="1300" height="400" type="image/jpeg" media="(min-width: 1300px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-            <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта.">
-          </picture>
+          <div class="contacts__text">
+            <h2 class="contacts__title title-tiny">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323037%2C59.938631&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=17" height="362"></iframe>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="page__main-footer main-footer">
       <div class="main-footer__wrapper container">
         <a class="main-footer__logo-text logo-text" href="index.html">
           <span class="visually-hidden">Логотип Cat Energy</span>
@@ -179,11 +182,11 @@
           </li>
         </ul>
         <div class="main-footer__logo">
-          <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-footer__link main-footer__link--text" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Сайт</span>
             <p class="main-footer__text">HTML Academy</p>
           </a>
-          <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="main-footer__link main-footer__link--img" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Сайт HTML Academy</span>
             <svg class="main-footer__academy-logo" width="27" height="34" viewBox="0 0 27 34" aria-hidden="true" focusable="false">
               <use href="images/icons/stack.svg#logo-academy"></use>
@@ -192,6 +195,7 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/script.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </body>
 </html>
