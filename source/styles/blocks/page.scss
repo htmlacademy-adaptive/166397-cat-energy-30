@@ -9,27 +9,27 @@
   min-height: 100%;
   margin: 0;
 
-  &--index {
-    @media (max-width: $mobile-width-only) {
-      background-image:
-        linear-gradient($primary-bg-color--opacity, $primary-bg-color--opacity 367px, $base-color 367px, $base-color),
-        url("../../images/index-background-mobile@1x.jpg"),
-        linear-gradient(90deg, #525156, #525156 50%, #414046 50%, #414046);
-      background-repeat: no-repeat;
-      background-size: auto, auto, 100% 694px;
-      background-position: 0 0, top 64px center;
-    }
+  // &--index {
+  //   @media (max-width: $mobile-width-only) {
+  //     background-image:
+  //       linear-gradient($primary-bg-color--opacity, $primary-bg-color--opacity 367px, $base-color 367px, $base-color),
+  //       url("../../images/index-background-mobile@1x.jpg"),
+  //       linear-gradient(90deg, #525156, #525156 50%, #414046 50%, #414046);
+  //     background-repeat: no-repeat;
+  //     background-size: auto, auto, 100% 694px;
+  //     background-position: 0 0, top 64px center;
+  //   }
 
-    @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient($primary-bg-color--opacity, $primary-bg-color--opacity 367px, $base-color 367px, $base-color),
-        url("../../images/index-background-mobile@2x.jpg"),
-        linear-gradient(90deg, #525156, #525156 50%, #414046 50%, #414046);
-      background-repeat: no-repeat;
-      background-size: auto, 320px 302px, 100% 694px;
-      background-position: 0 0, top 64px center;
-    }
-  }
+  //   @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
+  //     background-image:
+  //       linear-gradient($primary-bg-color--opacity, $primary-bg-color--opacity 367px, $base-color 367px, $base-color),
+  //       url("../../images/index-background-mobile@2x.jpg"),
+  //       linear-gradient(90deg, #525156, #525156 50%, #414046 50%, #414046);
+  //     background-repeat: no-repeat;
+  //     background-size: auto, 320px 302px, 100% 694px;
+  //     background-position: 0 0, top 64px center;
+  //   }
+  // }
 }
 
 @media (min-width: $desktop-width) {
