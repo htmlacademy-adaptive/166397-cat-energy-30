@@ -19,7 +19,7 @@
     border-color: $septenary-bg-color;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border-color: $error-color;
   }
 
@@ -29,6 +29,7 @@
   }
 
   &--textarea {
+    display: block;
     width: 100%;
     min-height: 150px;
     resize: none;
@@ -37,7 +38,7 @@
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
     font-size: 20px;
-    line-height: 24px;
+    line-height: normal;
 
     &--textarea {
       min-height: 175px;

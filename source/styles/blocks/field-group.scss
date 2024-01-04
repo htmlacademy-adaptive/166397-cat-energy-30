@@ -4,49 +4,60 @@
   border: 0;
 
   &--details {
-    position: relative;
-
-    @media (max-width: $mobile-width-only) {
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100vw;
-        height: 1px;
-        background-color: $quaternary-bg-color;
-        box-shadow: 100vw 0 0 $quaternary-bg-color;
-      }
-    }
-
     @media (min-width: $desktop-width) {
       @include grid;
       column-gap: 80px;
     }
   }
 
+  &--contacts {
+    .field-group__title {
+      margin-bottom: 35px;
+    }
+
+    @media (min-width: $tablet-width) {
+      .field-group__title {
+        margin-bottom: 76px;
+      }
+    }
+  }
+
   &--comment {
+    .field-group__title {
+      margin-bottom: 38px;
+    }
+
     @media (min-width: $tablet-width) {
       .field-group__title {
         margin-bottom: 87px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      .field-group__title {
+        margin-bottom: 78px;
+      }
+    }
+  }
+
+  &--additional {
+    .field-group__title {
+      margin-bottom: 34px;
+    }
+
+    @media (min-width: $tablet-width) {
+      .field-group__title {
+        margin-bottom: 57px;
       }
     }
   }
 }
 
 .field-group__title {
-  margin-bottom: 35px;
-
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
-
     br {
       display: none;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
   }
 }
 
@@ -58,7 +69,7 @@
   @media (max-width: $mobile-width-only) {
     &--data {
       position: relative;
-      padding-bottom: 24px;
+      padding-bottom: 22px;
 
       &::after {
         content: "";
@@ -102,6 +113,10 @@
       padding: 23px 27px 27px;
       border: 1px solid #e7e7e7;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 25px 28px;
+    }
   }
 }
 
@@ -117,14 +132,9 @@
     justify-content: space-between;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-top: 19px;
-  }
-
   @media (min-width: $desktop-width) {
     @include grid;
     column-gap: 80px;
-    margin-top: 0;
 
     .field-group__item {
       margin-bottom: 0;
@@ -150,6 +160,7 @@
   @media (min-width: $tablet-width) {
     @include grid;
     row-gap: 32px;
+    column-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {

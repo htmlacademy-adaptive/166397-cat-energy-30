@@ -98,6 +98,21 @@
   }
 }
 
+.hero__image {
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    width: 673px;
+    height: 608px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+  }
+}
+
 .hero__button {
   // align-self: start;
   // justify-self: start;

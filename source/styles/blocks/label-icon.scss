@@ -17,7 +17,7 @@
     background-color: $primary-bg-color;
   }
 
-  input:invalid ~ .label-icon__icon {
+  input:focus:invalid ~ .label-icon__icon {
     background-color: $error-color;
   }
 

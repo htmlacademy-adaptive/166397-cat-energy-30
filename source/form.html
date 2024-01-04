@@ -17,7 +17,7 @@
           <div class="main-nav__container">
             <a class="main-nav__logo" href="index.html">
               <picture>
-                <source width="202" height="59" media="(min-width: 1300px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
+                <source width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
                 <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
                 <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy. Перейти на главную страницу.">
               </picture>
@@ -28,7 +28,7 @@
                 <use href="images/icons/stack.svg#logo-text"></use>
               </svg>
             </a>
-            <button class="main-nav__burger main-nav__burger--active">
+            <button class="main-nav__burger main-nav__burger--active"  type="button">
               <span class="visually-hidden">Меню</span>
               <span class="main-nav__burger-icon"></span>
             </button>
@@ -50,10 +50,12 @@
     <main class="page__main-container main-container">
       <section class="main-container__program-form program-form">
         <div class="program-form__wrapper container">
-          <h1 class="program-form__title title-huge">Подбор программы</h1>
-          <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="program-form__intro">
+            <h1 class="program-form__title title-huge">Подбор программы</h1>
+            <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          </div>
           <form class="program-form__profile profile" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="profile__field-group field-group field-group--details">
+            <fieldset class="profile__details field-group field-group--details">
               <legend class="visually-hidden">Данные кота</legend>
               <ul class="field-group__list field-group__list--data">
                 <li class="field-group__item">
@@ -84,7 +86,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="profile__field-group field-group">
+            <fieldset class="profile__contacts field-group field-group--contacts">
               <legend class="field-group__title title-custom title-custom--form">Контактные данные <br>(владельца кота)</legend>
               <ul class="field-group__list field-group__list--contacts">
                 <li class="field-group__item">
@@ -101,11 +103,11 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="profile__field-group field-group field-group--comment">
+            <fieldset class="profile__comment field-group field-group--comment">
               <legend class="field-group__title title-custom title-custom--form">Комментарий</legend>
               <textarea class="field-group__field field field--textarea" name="about">Расскажите обо всех повадках кота</textarea>
             </fieldset>
-            <fieldset class="profile__field-group field-group">
+            <fieldset class="profile__additional field-group field-group--additional">
               <legend class="field-group__title title-custom title-custom--form">Дополнительно</legend>
               <ul class="field-group__list field-group__list--additional">
                 <li class="field-group__item">
@@ -126,10 +128,10 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="program-form__container">
-              <button class="program-form__button button button--primary" type="submit">Отправить заявку</button>
-              <p class="program-form__legend">
-                <small class="program-form__small">* — Обязательные поля</small>
+            <div class="profile__container">
+              <button class="profile__button button button--primary" type="submit">Отправить заявку</button>
+              <p class="profile__legend">
+                <small class="profile__small">* — Обязательные поля</small>
               </p>
             </div>
           </form>
