@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
+    padding-top: 68px;
     padding-bottom: 66px;
   }
 }
@@ -22,7 +22,7 @@
 .main-footer__logo-text {
   display: block;
   width: 128px;
-  margin: 0 auto 20px;
+  margin: 0 auto 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -37,10 +37,11 @@
 }
 
 .main-footer__social {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-left: 36px;
   }
 }
 

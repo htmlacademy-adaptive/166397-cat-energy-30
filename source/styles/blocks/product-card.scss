@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,7 +76,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 7px;
+    padding: 7px 0 6px;
   }
 }
 
@@ -99,10 +99,15 @@
   @media (min-width: $tablet-width) {
     margin-top: 32px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
 }
 
 .product-card--additional {
   display: block;
+  padding: 14px 0 18px;
   border-bottom: 1px solid $septenary-bg-color;
   background-color: transparent;
 
@@ -116,6 +121,11 @@
 
   .product-card__title {
     width: auto;
+    margin-bottom: 13px;
+  }
+
+  .product-card__link {
+    margin-top: 14px;
   }
 
   .product-card__text {
@@ -126,7 +136,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 29px;
+    padding: 26px 38px 27px;
     border-bottom: 1px solid $septenary-bg-color;
     background-image: none;
 
@@ -151,11 +161,12 @@
     }
 
     .product-card__description-item {
+      padding: 0;
       border-bottom: none;
     }
 
     .product-card__link {
-      margin-top: 22px;
+      margin-top: 25px;
     }
   }
 
@@ -164,7 +175,7 @@
     gap: 40px;
     align-items: center;
     width: 896px;
-    padding: 15px 0 17px;
+    padding: 14px 0 17px;
 
     &:last-child {
       border-bottom: 1px solid $septenary-bg-color;
@@ -195,7 +206,7 @@
 .product-card--more {
   display: block;
   align-self: end;
-  padding-top: 75px;
+  padding-top: 78px;
   color: $fourth-color-text;
   text-align: center;
   background-color: transparent;
@@ -215,6 +226,11 @@
 
   .product-card__title {
     width: auto;
+    margin-bottom: 10px;
+  }
+
+  .product-card__link {
+    margin-top: 19px;
   }
 
   @media (min-width: $tablet-width) {
@@ -236,8 +252,13 @@
     }
 
     .product-card__text {
-      margin-bottom: 50px;
+      width: 226px;
+      margin: 0 auto 50px;
       line-height: 18px;
+    }
+
+    .product-card__link {
+      margin-top: 32px;
     }
   }
 
@@ -249,6 +270,7 @@
     }
 
     .product-card__text {
+      width: auto;
       margin-bottom: 58px;
     }
   }

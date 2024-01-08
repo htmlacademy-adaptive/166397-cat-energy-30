@@ -53,6 +53,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+    max-width: 708px;
   }
 }
 
@@ -68,6 +69,7 @@
   @media (min-width: $desktop-width) {
     z-index: 1;
     max-width: 610px;
+    margin-bottom: 52px;
     padding: 81px 10px 0 80px;
     // grid-row-start: 1;
     // grid-row-end: 2;
@@ -100,8 +102,9 @@
   @media (min-width: $tablet-width) {
     order: 3;
     height: 609px;
-    margin-top: -83px;
-    margin-left: 36px;
+    margin-top: -84px;
+    margin-left: 38px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -64,6 +64,11 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/banner-cat@2x.jpg");
     }
+
+    &::after {
+      top: 56px;
+      left: 84px;
+    }
   }
 }
 

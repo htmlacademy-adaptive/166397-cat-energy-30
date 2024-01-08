@@ -13,7 +13,7 @@
 
 .programmes__item {
   margin-bottom: 20px;
-  padding: 20px 24px 18px;
+  padding: 25px 20px 18px;
   background-color: $secondary-bg-color;
 
   &:last-child {
@@ -23,13 +23,13 @@
   @media (min-width: $tablet-width) {
     position: relative;
     margin-bottom: 30px;
-    padding: 77px 63px 53px 53px;
+    padding: 78px 63px 56px 53px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     margin-bottom: 0;
-    padding: 47px 61px 55px 52px;
+    padding: 47px 61px 58px 53px;
   }
 }
 
@@ -60,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 91px;
+    top: 93px;
     right: 63px;
     width: 200px;
     height: 200px;
@@ -82,7 +82,7 @@
   transform: translate(-50%, -50%);
 
   &--slim {
-    top: 42%;
+    top: 43%;
 
     @media (min-width: $tablet-width) {
       width: 140px;
@@ -119,13 +119,13 @@
   @media (min-width: $tablet-width) {
     min-width: 340px;
     width: 57%;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     padding: 0;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }

@@ -26,14 +26,14 @@
 }
 
 .example__info {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 97px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 433px;
     margin-bottom: 0;
   }
 }
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 }
 

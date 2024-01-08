@@ -2,6 +2,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: flex-start;
+    padding-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    padding-right: 0;
   }
 }
 
@@ -83,7 +90,7 @@
 }
 
 .main-nav__burger {
-  margin-right: -6px;
+  margin-right: -4px;
   padding: 0 6px;
   width: 36px;
   height: 36px;

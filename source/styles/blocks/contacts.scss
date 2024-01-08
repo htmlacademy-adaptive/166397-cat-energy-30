@@ -24,9 +24,10 @@
 .contacts__text {
   @include flex-sb;
   padding: 26px 0;
+  column-gap: 16px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 40px;
+    padding: 61px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,8 +41,6 @@
 }
 
 .contacts__title {
-  margin-right: 23px;
-
   @media (min-width: $tablet-width) {
     width: 163px;
   }

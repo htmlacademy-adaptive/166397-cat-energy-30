@@ -74,7 +74,7 @@
 }
 
 .profile__container {
-  margin-top: 34px;
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     @include grid;
@@ -85,7 +85,8 @@
 
   @media (min-width: $desktop-width) {
     gap: 80px;
-    align-items: left;
+    align-items: center;
+    margin-top: 59px;
   }
 }
 
