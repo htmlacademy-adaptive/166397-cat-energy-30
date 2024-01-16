@@ -29,13 +29,6 @@
   }
 }
 
-.main-footer__link {
-  font-size: 16px;
-  line-height: 20px;
-  color: inherit;
-  text-decoration: none;
-}
-
 .main-footer__social {
   margin-bottom: 19px;
 
@@ -52,6 +45,26 @@
 .main-footer__logo {
   @include flex-sb;
   align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    .main-footer__academy-logo {
+      color: $primary-bg-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .main-footer__academy-logo {
+      color: $primary-bg-color;
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     gap: 23px;
@@ -61,42 +74,4 @@
 .main-footer__academy-logo {
   display: block;
   color: $sextuple-bg-color;
-}
-
-.main-footer__link--text {
-  &:hover,
-  &:focus {
-    & ~ .main-footer__link--img {
-      .main-footer__academy-logo {
-        color: $primary-bg-color;
-      }
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-
-    & ~ .main-footer__link--img {
-      .main-footer__academy-logo {
-        color: $primary-bg-color;
-        opacity: 0.3;
-      }
-    }
-  }
-}
-
-.main-footer__link--img {
-  &:hover,
-  &:focus {
-    .main-footer__academy-logo {
-      color: $primary-bg-color;
-    }
-  }
-
-  &:active {
-    .main-footer__academy-logo {
-      color: $primary-bg-color;
-      opacity: 0.3;
-    }
-  }
 }

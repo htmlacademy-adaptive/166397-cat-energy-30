@@ -191,8 +191,8 @@
 
     .product-card__description {
       width: 285px;
-      grid-template-columns: 204px 41px;
-      gap: 40px;
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 20px;
       justify-items: start;
     }
 

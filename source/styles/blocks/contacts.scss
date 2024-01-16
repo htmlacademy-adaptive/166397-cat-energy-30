@@ -1,6 +1,8 @@
 .contacts {
-  &--dark {
-    background-color: $secondary-bg-color;
+  background-color: $secondary-bg-color;
+
+  &--light {
+    background-color: $base-color;
   }
 
   iframe {
