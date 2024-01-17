@@ -33,6 +33,7 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    max-width: 236px;
     margin: 0;
     margin-left: 36px;
   }
@@ -44,7 +45,9 @@
 
 .main-footer__logo {
   @include flex-sb;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 23px;
   font-size: 16px;
   line-height: 20px;
   color: inherit;
@@ -67,7 +70,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    gap: 23px;
+    max-width: 170px;
   }
 }
 

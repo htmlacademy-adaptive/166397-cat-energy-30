@@ -1,5 +1,6 @@
 .contacts {
   background-color: $secondary-bg-color;
+  overflow: auto;
 
   &--light {
     background-color: $base-color;
@@ -43,12 +44,15 @@
 }
 
 .contacts__title {
+  width: 125px;
+
   @media (min-width: $tablet-width) {
     width: 163px;
   }
 }
 
 .contacts__address {
+  width: 141px;
   font-style: normal;
   line-height: 20px;
 

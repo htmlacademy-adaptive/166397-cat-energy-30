@@ -119,11 +119,13 @@
     flex-direction: column-reverse;
     align-items: flex-end;
     gap: 9px;
+    width: 200px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
     flex-direction: row-reverse;
     column-gap: 63px;
+    width: auto;
   }
 }

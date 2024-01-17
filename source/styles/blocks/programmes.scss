@@ -8,6 +8,8 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
   }
 }
 
@@ -27,6 +29,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 570px;
     margin-bottom: 0;
     padding: 47px 61px 58px 53px;
@@ -70,6 +75,7 @@
     position: relative;
     top: 0;
     right: 0;
+    flex-shrink: 0;
     width: 100px;
     height: 100px;
   }
@@ -110,7 +116,7 @@
 
 .programmes__text {
   min-width: 227px;
-  width: 95%;
+  // width: 95%;
   margin: 0;
   margin-bottom: 13px;
   padding-bottom: 23px;
@@ -125,6 +131,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-grow: 1;
     width: auto;
     margin-bottom: 26px;
   }

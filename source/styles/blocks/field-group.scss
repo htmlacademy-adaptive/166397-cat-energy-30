@@ -69,7 +69,7 @@
   @media (max-width: $mobile-width-only) {
     &--data {
       position: relative;
-      padding-bottom: 22px;
+      padding-bottom: 24px;
 
       &::after {
         content: "";
@@ -95,28 +95,32 @@
       margin-bottom: 0;
     }
   }
+}
 
-  &--program {
-    padding: 22px 0 19px;
+.field-group__list--program {
+  padding: 22px 0 19px;
+
+  .field-group__item {
+    justify-content: start;
+    column-gap: 15px;
+    margin-bottom: 13px;
+  }
+
+  .field-group__field {
+    flex-grow: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    border: 1px solid #e7e7e7;
 
     .field-group__item {
-      justify-content: start;
-      column-gap: 15px;
-      margin-bottom: 13px;
+      column-gap: 18px;
     }
+  }
 
-    .field-group__field {
-      flex-grow: 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      padding: 23px 27px 27px;
-      border: 1px solid #e7e7e7;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 25px 28px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 25px 28px;
   }
 }
 
@@ -145,10 +149,11 @@
 .field-group__list--additional {
   .field-group__item {
     justify-content: start;
-    gap: 15px;
-    margin-bottom: 12px;
+    column-gap: 15px;
+    margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
+      column-gap: 20px;
       margin-bottom: 0;
     }
 
@@ -177,8 +182,7 @@
   @include flex-sb;
   column-gap: 13px;
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
@@ -190,6 +194,8 @@
 }
 
 .field-group__label {
+  flex-shrink: 0;
+  max-width: 100%;
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
@@ -203,6 +209,10 @@
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.field-group__label-text {
+  flex-shrink: 0;
 }
 
 .field-group__field {

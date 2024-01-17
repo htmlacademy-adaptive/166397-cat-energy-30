@@ -22,6 +22,7 @@
 .example__wrapper {
   @media (min-width: $desktop-width) {
     @include flex-sb;
+    align-items: end;
   }
 }
 
@@ -64,10 +65,20 @@
   }
 }
 
+.example__stats {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
+}
+
 .example__slider {
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    margin-bottom: 9px;
   }
 }
