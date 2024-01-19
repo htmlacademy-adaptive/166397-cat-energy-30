@@ -14,7 +14,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   column-gap: 32px;
   row-gap: 34px;
   margin: 0;
@@ -67,16 +66,20 @@
   z-index: 1;
   top: 100%;
   width: 87px;
-  margin: 0;
-  margin-top: 3px;
+  min-height: 25px;
+  max-height: 38px;
   padding: 0 10px;
+  margin: 0;
   font-size: 12px;
   line-height: 12px;
   background-color: $quinary-bg-color;
-  transform: translateY(-50%);
+  transform: translateY(-9px);
+  overflow: auto;
 
   @media (min-width: $tablet-width) {
     width: fit-content;
+    max-width: 141px;
+    max-height: 44px;
     margin-top: 0;
     padding: 0 8px;
     font-size: 14px;
@@ -91,10 +94,10 @@
 
 .stats__item--price {
   flex-direction: row-reverse;
-  gap: 4px;
+  gap: 10px;
   width: auto;
-  min-height: auto;
   padding: 0;
+  text-align: left;
   border: none;
 
   .stats__value {
@@ -105,9 +108,12 @@
     @include stats-price-typography;
     position: static;
     width: auto;
+    min-height: auto;
+    max-height: none;
     margin: 0;
     padding: 0;
     transform: none;
+    overflow: visible;
 
     &::after {
       content: ":";
@@ -115,11 +121,16 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: auto;
     flex-direction: column-reverse;
     align-items: flex-end;
     gap: 9px;
+    margin-left: auto;
     width: 200px;
+
+    .stats__definition {
+      max-width: none;
+      text-align: right;
+    }
   }
 
   @media (min-width: $desktop-width) {

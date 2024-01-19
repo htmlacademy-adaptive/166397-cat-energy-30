@@ -58,6 +58,7 @@
     row-gap: 18px;
     align-items: start;
     margin-bottom: 0;
+    overflow: hidden;
 
     &::before {
       content: counter(process-list);
@@ -94,6 +95,11 @@
     grid-column-start: 1;
     grid-column-end: 3;
     min-width: 245px;
+    max-width: 324px;
     margin-top: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
   }
 }

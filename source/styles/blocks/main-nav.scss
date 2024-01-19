@@ -162,7 +162,8 @@
   @media (min-width: $tablet-width) {
     position: static;
     margin-left: auto;
-    max-width: 480px;
+    // max-width: 480px;
+    max-width: 68%;
   }
 
   @media (min-width: $desktop-width) {
