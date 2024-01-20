@@ -75,11 +75,10 @@
         content: "";
         position: absolute;
         bottom: 0;
-        right: 0;
+        left: -20px;
         width: 100vw;
         height: 1px;
         background-color: $quaternary-bg-color;
-        box-shadow: 100vw 0 0 $quaternary-bg-color;
       }
     }
   }
