@@ -4,3 +4,36 @@
     justify-content: space-between;
   }
 }
+
+.products-additional__title {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.products-additional__list {
+  position: relative;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid $septenary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    border: 1px solid $septenary-bg-color;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 894px;
+    margin-bottom: 0;
+    border: none;
+    border-top: 1px solid $septenary-bg-color;
+  }
+}

@@ -1,3 +1,13 @@
 .main-header {
-  // display: flex;
+  position: relative;
+  background-color: $base-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
 }

@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="page__main-header main-header">
       <div class="main-header__wrapper container">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <div class="main-nav__container">
             <a class="main-nav__logo" href="index.html">
               <picture>
-                <source width="202" height="59" media="(min-width: 1300px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
+                <source width="202" height="59" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
                 <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
-                <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy. Перейти на главную страницу.">
+                <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип «Cat Energy». Перейти на главную страницу.">
               </picture>
             </a>
             <a class="main-nav__logo-text logo-text logo-text--header" href="index.html">
@@ -28,9 +28,10 @@
                 <use href="images/icons/stack.svg#logo-text"></use>
               </svg>
             </a>
-            <a class="main-nav__burger" href="#">
-              <span class="visually-hidden">Открыть меню</span>
-            </a>
+            <button class="main-nav__burger main-nav__burger--active" type="button">
+              <span class="visually-hidden">Меню</span>
+              <span class="main-nav__burger-icon"></span>
+            </button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -46,15 +47,17 @@
         </nav>
       </div>
     </header>
-    <main class="main-container">
-      <section class="program-form">
+    <main class="page__main-container main-container">
+      <section class="main-container__program-form program-form">
         <div class="program-form__wrapper container">
-          <h1 class="program-form__title title-huge">Подбор программы</h1>
-          <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="program-form__intro">
+            <h1 class="program-form__title title-huge">Подбор программы</h1>
+            <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          </div>
           <form class="program-form__profile profile" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="profile__field-group field-group field-group--details">
+            <fieldset class="profile__details field-group field-group--details">
               <legend class="visually-hidden">Данные кота</legend>
-              <ul class="field-group__list">
+              <ul class="field-group__list field-group__list--data">
                 <li class="field-group__item">
                   <label class="field-group__label" for="name">Имя:*</label>
                   <input class=" field-group__field field" type="text" id="name" name="name" placeholder="Барсик" required>
@@ -83,26 +86,30 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="profile__field-group field-group">
-              <legend class="field-group__title title-custom title-custom--form">Контактные данные (владельца кота)</legend>
+            <fieldset class="profile__contacts field-group field-group--contacts">
+              <legend class="field-group__title title-custom title-custom--form">Контактные данные<br> (владельца кота)</legend>
               <ul class="field-group__list field-group__list--contacts">
                 <li class="field-group__item">
-                  <label class="field-group__label label-icon label-icon--email" for="email">E-mail:*
-                    <input class=" field-group__field field field--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-                  </label>
+                  <label class="field-group__label" for="email">E-mail:*</label>
+                  <div class="field-icon field-icon--email">
+                    <input class="field-group__field field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                    <span class="field-icon__icon"></span>
+                  </div>
                 </li>
                 <li class="field-group__item">
-                  <label class="field-group__label label-icon label-icon--phone" for="phone">Телефон:*
-                    <input class=" field-group__field field field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-                  </label>
+                  <label class="field-group__label" for="phone">Телефон:*</label>
+                  <div class="field-icon field-icon--phone">
+                    <input class="field-group__field field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                    <span class="field-icon__icon"></span>
+                  </div>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="profile__field-group field-group">
+            <fieldset class="profile__comment field-group field-group--comment">
               <legend class="field-group__title title-custom title-custom--form">Комментарий</legend>
-              <textarea class="field-group__field field field--textarea" name="about">Расскажите обо всех повадках кота</textarea>
+              <textarea class="field-group__field field field--textarea" name="about" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="profile__field-group field-group">
+            <fieldset class="profile__additional field-group field-group--additional">
               <legend class="field-group__title title-custom title-custom--form">Дополнительно</legend>
               <ul class="field-group__list field-group__list--additional">
                 <li class="field-group__item">
@@ -123,31 +130,31 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="program-form__container">
-              <button class="program-form__button button button--primary" type="submit">Отправить заявку</button>
-              <p class="program-form__legend">
-                <small class="program-form__small">* — Обязательные поля</small>
+            <div class="profile__footer">
+              <button class="profile__button button button--primary" type="submit">Отправить заявку</button>
+              <p class="profile__legend">
+                <small class="profile__small">* — Обязательные поля</small>
               </p>
             </div>
           </form>
         </div>
       </section>
-      <section class="contacts">
+      <section class="main-container__contacts contacts">
         <div class="contacts__wrapper container">
-          <h2 class="contacts__title title-tiny">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <picture>
-            <source width="1300" height="400" type="image/jpeg" media="(min-width: 1300px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-            <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта.">
-          </picture>
+          <div class="contacts__text">
+            <h2 class="contacts__title title-tiny">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=30.323037%2C59.938631&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=17"></iframe>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="page__main-footer main-footer">
       <div class="main-footer__wrapper container">
         <a class="main-footer__logo-text logo-text" href="index.html">
-          <span class="visually-hidden">Логотип Cat Energy</span>
+          <span class="visually-hidden">Логотип «Cat Energy». Перейти на главную страницу</span>
           <svg class="logo-text__image" width="128" height="24" viewBox="0 0 128 24" aria-hidden="true" focusable="false">
             <use href="images/icons/stack.svg#logo-text"></use>
           </svg>
@@ -178,20 +185,15 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__logo">
-          <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Сайт</span>
-            <p class="main-footer__text">HTML Academy</p>
-          </a>
-          <a class="main-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Сайт HTML Academy</span>
-            <svg class="main-footer__academy-logo" width="27" height="34" viewBox="0 0 27 34" aria-hidden="true" focusable="false">
-              <use href="images/icons/stack.svg#logo-academy"></use>
-            </svg>
-          </a>
-        </div>
+        <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Сайт</span>
+          <p class="main-footer__text">HTML Academy</p>
+          <svg class="main-footer__academy-logo" width="27" height="34" viewBox="0 0 27 34" aria-hidden="true" focusable="false">
+            <use href="images/icons/stack.svg#logo-academy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/script.js" defer></script>
   </body>
 </html>

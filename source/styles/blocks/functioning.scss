@@ -1,12 +1,8 @@
-.functioning {
-  margin-bottom: 49px;
+.functioning__title {
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 21px;
   }
 }
 
@@ -14,33 +10,92 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  counter-reset: process-list;
 
   @media (min-width: $tablet-width) {
     @include grid;
+    column-gap: 59px;
+    row-gap: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    @include grid (4);
+    @include grid(4);
+    column-gap: 79px;
   }
 }
 
 .functioning__item {
   position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
 
-  // @media (min-width: $tablet-width) {
-  //   max-width: 354px;
-  // }
+  &::before {
+    counter-increment: process-list;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    padding-top: 13px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: $sixth-color-text;
+    text-align: center;
+  }
 
-  // @media (min-width: $desktop-width) {
-  //   max-width: 250px;
-  // }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content 1fr;
+    column-gap: 27px;
+    row-gap: 18px;
+    align-items: start;
+    margin-bottom: 0;
+    overflow: hidden;
+
+    &::before {
+      content: counter(process-list);
+    }
+  }
 }
 
 .functioning__picture {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
   height: 60px;
   background-color: $primary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-top: 51px;
+  }
+}
+
+.functioning__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    min-width: 245px;
+    max-width: 324px;
+    margin-top: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+  }
 }

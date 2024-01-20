@@ -1,11 +1,30 @@
 .title-tiny {
+  margin: 0;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $fourth-color-text;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
   &--special {
     color: $fifth-color-text;
+
+    @media (min-width: $tablet-width) {
+      line-height: 24px;
+    }
+  }
+
+  &--low {
+    line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+      line-height: 20px;
+    }
   }
 }
