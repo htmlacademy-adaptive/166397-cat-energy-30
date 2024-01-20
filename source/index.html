@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
@@ -57,6 +59,9 @@
           </div>
           <div class="hero__picture">
             <picture>
+              <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/index-product-desktop@1x.webp 1x, images/index-product-desktop@2x.webp 2x">
+              <source width="674" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/index-product-tablet@1x.webp 1x, images/index-product-tablet@2x.webp 2x">
+              <source width="280" height="270" type="image/webp" srcset="images/index-product-mobile@1x.webp 1x, images/index-product-mobile@2x.webp 2x">
               <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-product-desktop@1x.png 1x, images/index-product-desktop@2x.png 2x">
               <source width="674" height="609" type="image/jpeg" media="(min-width: 768px)" srcset="images/index-product-tablet@1x.png 1x, images/index-product-tablet@2x.png 2x">
               <img class="hero__image" src="images/index-product-mobile@1x.png" srcset="images/index-product-mobile@2x.png 2x" width="280" height="270" alt="Товар Cat Energy PRO 500 г, курица">
@@ -164,12 +169,16 @@
           <div class="example__slider slider">
             <div class="slider__left">
               <picture>
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/before-cat-tablet@1x.webp 1x, images/before-cat-tablet@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/before-cat-mobile@1x.webp 1x, images/before-cat-mobile@2x.png 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/before-cat-tablet@1x.png 1x, images/before-cat-tablet@2x.png 2x">
                 <img class="slider__image" src="images/before-cat-mobile@1x.png" srcset="images/before-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот до функционального питания.">
               </picture>
             </div>
             <div class="slider__right">
               <picture>
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/after-cat-tablet@1x.webp 1x, images/after-cat-tablet@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" srcset="images/after-cat-mobile@1x.webp 1x, images/after-cat-mobile@2x.png 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/after-cat-tablet@1x.png 1x, images/after-cat-tablet@2x.png 2x">
                 <img class="slider__image" src="images/after-cat-mobile@1x.png" srcset="images/after-cat-mobile@2x.png 2x" width="280" height="256" alt="Кот после функционального питания.">
               </picture>
