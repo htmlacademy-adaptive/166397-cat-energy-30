@@ -13,7 +13,7 @@
   <body class="page__body">
     <header class="page__main-header main-header">
       <div class="main-header__wrapper container">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <div class="main-nav__container">
             <a class="main-nav__logo" href="index.html">
               <picture>
@@ -90,18 +90,18 @@
               <legend class="field-group__title title-custom title-custom--form">Контактные данные<br> (владельца кота)</legend>
               <ul class="field-group__list field-group__list--contacts">
                 <li class="field-group__item">
-                  <label class="field-group__label label-icon label-icon--email" for="email">
-                    <span class="field-group__label-text">E-mail:*</span>
+                  <label class="field-group__label" for="email">E-mail:*</label>
+                  <div class="field-icon field-icon--email">
                     <input class="field-group__field field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-                    <span class="label-icon__icon"></span>
-                  </label>
+                    <span class="field-icon__icon"></span>
+                  </div>
                 </li>
                 <li class="field-group__item">
-                  <label class="field-group__label label-icon label-icon--phone" for="phone">
-                    <span class="field-group__label-text">Телефон:*</span>
+                  <label class="field-group__label" for="phone">Телефон:*</label>
+                  <div class="field-icon field-icon--phone">
                     <input class="field-group__field field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-                    <span class="label-icon__icon"></span>
-                  </label>
+                    <span class="field-icon__icon"></span>
+                  </div>
                 </li>
               </ul>
             </fieldset>

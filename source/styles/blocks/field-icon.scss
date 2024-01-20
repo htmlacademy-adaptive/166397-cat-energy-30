@@ -1,14 +1,16 @@
-.label-icon {
+.field-icon {
   position: relative;
+  flex-grow: 1;
+  width: 100px;
 
   &--email {
-    .label-icon__icon {
+    .field-icon__icon {
       mask-image: url("../../images/icons/stack.svg#email-stroke");
     }
   }
 
   &--phone {
-    .label-icon__icon {
+    .field-icon__icon {
       mask-image: url("../../images/icons/stack.svg#phone-stroke");
     }
   }
@@ -17,20 +19,20 @@
     padding-right: 35px;
   }
 
-  input:focus ~ .label-icon__icon {
+  input:focus ~ .field-icon__icon {
     background-color: $primary-bg-color;
   }
 
-  input:focus:invalid ~ .label-icon__icon {
+  input:focus:invalid ~ .field-icon__icon {
     background-color: $error-color;
   }
 
-  input:disabled ~ .label-icon__icon {
+  input:disabled ~ .field-icon__icon {
     opacity: 0.3;
   }
 }
 
-.label-icon__icon {
+.field-icon__icon {
   position: absolute;
   width: 20px;
   height: 20px;

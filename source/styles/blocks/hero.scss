@@ -37,9 +37,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: grid;
-    // grid-template-columns: 447px 160px 1fr;
-    // grid-template-rows: min-content 1fr;
     padding-top: 29px;
   }
 }
@@ -70,11 +67,6 @@
     max-width: 610px;
     margin-bottom: 52px;
     padding: 81px 10px 0 80px;
-    // grid-row-start: 1;
-    // grid-row-end: 2;
-    // grid-column-start: 1;
-    // grid-column-end: 3;
-    // justify-self: end;
   }
 }
 
@@ -110,11 +102,6 @@
     position: absolute;
     top: 29px;
     right: 331px;
-    // grid-column-start: 2;
-    // grid-column-end: 4;
-    // grid-row-start: 1;
-    // grid-row-end: 3;
-    // justify-self: start;
     height: 499px;
     margin-top: 0;
   }
@@ -136,9 +123,6 @@
 }
 
 .hero__button {
-  // align-self: start;
-  // justify-self: start;
-
   @media (min-width: $tablet-width) {
     z-index: 1;
     order: 2;

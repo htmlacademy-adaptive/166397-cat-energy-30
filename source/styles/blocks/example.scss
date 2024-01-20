@@ -14,7 +14,6 @@
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 75px;
-    // background-image: linear-gradient(0deg, $secondary-bg-color, $secondary-bg-color 462px, transparent 462px, transparent);
     background-image: linear-gradient(180deg, transparent, transparent 135px, $secondary-bg-color 135px, $secondary-bg-color);
     border-top: 0;
   }
@@ -72,7 +71,6 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    max-width: 814px;
   }
 }
 

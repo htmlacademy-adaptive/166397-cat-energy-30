@@ -103,6 +103,7 @@
   .field-group__item {
     justify-content: start;
     column-gap: 15px;
+    flex-wrap: nowrap;
     margin-bottom: 13px;
   }
 
@@ -125,20 +126,13 @@
 }
 
 .field-group__list--contacts {
-  .field-group__item {
-    display: block;
-  }
-
-  .field-group__label {
-    display: flex;
-    gap: 13px;
-    align-items: center;
-    justify-content: space-between;
+  .field-group__field {
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     @include grid;
-    column-gap: 80px;
+    gap: 17px 80px;
 
     .field-group__item {
       margin-bottom: 0;
@@ -150,6 +144,7 @@
   .field-group__item {
     justify-content: start;
     column-gap: 15px;
+    flex-wrap: nowrap;
     margin-bottom: 13px;
 
     @media (min-width: $tablet-width) {
@@ -180,8 +175,9 @@
 
 .field-group__item {
   @include flex-sb;
-  column-gap: 13px;
+  gap: 13px;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 14px;
 
   &:last-child {
@@ -209,10 +205,6 @@
     font-size: 20px;
     line-height: 24px;
   }
-}
-
-.field-group__label-text {
-  flex-shrink: 0;
 }
 
 .field-group__field {
