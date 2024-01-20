@@ -8,11 +8,10 @@
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    left: -20px;
     width: 100vw;
     height: 1px;
     background-color: $octonary-bg-color;
-    box-shadow: 100vw 0 0 $octonary-bg-color;
   }
 
   @media (min-width: $tablet-width) {
