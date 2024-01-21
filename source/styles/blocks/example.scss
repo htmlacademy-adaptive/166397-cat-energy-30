@@ -22,7 +22,7 @@
 .example__wrapper {
   @media (min-width: $desktop-width) {
     @include flex-sb;
-    align-items: end;
+    align-items: start;
   }
 }
 
@@ -79,6 +79,5 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 9px;
   }
 }
