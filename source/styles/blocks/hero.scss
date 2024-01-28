@@ -4,7 +4,10 @@
   @media (max-width: $mobile-width-only) {
     background-image:
       linear-gradient(0deg, $base-color, $base-color 178px, $primary-bg-color--opacity 178px, $primary-bg-color--opacity),
-      url("../../images/index-background-mobile@1x.jpg"),
+      image-set(
+          url("../../images/index-background-mobile@1x.webp") type("image/webp"),
+          url("../../images/index-background-mobile@1x.jpg") type("image/jpeg")
+        ),
       linear-gradient(90deg, #525156, #525156 50%, #414046 50%, #414046);
     background-repeat: no-repeat;
     background-size: auto;
@@ -14,7 +17,10 @@
   @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
     background-image:
       linear-gradient(0deg, $base-color, $base-color 178px, $primary-bg-color--opacity 178px, $primary-bg-color--opacity),
-      url("../../images/index-background-mobile@2x.jpg"),
+      image-set(
+          url("../../images/index-background-mobile@2x.webp") type("image/webp"),
+          url("../../images/index-background-mobile@2x.jpg") type("image/jpeg")
+        ),
       linear-gradient(90deg, #525156, #525156 50%, #414046 50%, #414046);
     background-repeat: no-repeat;
     background-size: auto, 320px 302px, auto;

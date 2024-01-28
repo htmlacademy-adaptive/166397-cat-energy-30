@@ -5,7 +5,11 @@
   line-height: 20px;
   color: $third-color-text;
   background-color: #838383;
-  background-image: url("../../images/banner-cat@1x.jpg");
+  background-image:
+    image-set(
+      url("../../images/banner-cat@1x.webp") type("image/webp"),
+      url("../../images/banner-cat@1x.jpg") type("image/jpeg")
+    );
   background-repeat: no-repeat;
   background-position: center;
 
@@ -32,13 +36,21 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/banner-cat@2x.jpg");
+    background-image:
+      image-set(
+        url("../../images/banner-cat@2x.webp") type("image/webp"),
+        url("../../images/banner-cat@2x.jpg") type("image/jpeg")
+      );
     background-size: 280px 290px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 71px 125px 69px 421px;
-    background-image: url("../../images/banner-cat-tablet@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/banner-cat-tablet@1x.webp") type("image/webp"),
+        url("../../images/banner-cat-tablet@1x.jpg") type("image/jpeg")
+      );
     background-size: auto;
 
     &::after {
@@ -50,7 +62,11 @@
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/banner-cat-tablet@2x.jpg");
+      background-image:
+        image-set(
+          url("../../images/banner-cat-tablet@2x.webp") type("image/webp"),
+          url("../../images/banner-cat-tablet@2x.jpg") type("image/jpeg")
+        );
       background-size: 707px 200px;
     }
   }
@@ -59,11 +75,19 @@
     display: flex;
     width: 245px;
     padding: 185px 42px 43px;
-    background-image: url("../../images/banner-cat@1x.jpg");
+    background-image:
+      image-set(
+          url("../../images/banner-cat@1x.webp") type("image/webp"),
+          url("../../images/banner-cat@1x.jpg") type("image/jpeg")
+        );
     background-size: 280px 290px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/banner-cat@2x.jpg");
+      background-image:
+        image-set(
+          url("../../images/banner-cat@2x.webp") type("image/webp"),
+          url("../../images/banner-cat@2x.jpg") type("image/jpeg")
+        );
     }
 
     &::after {
